@@ -3,6 +3,7 @@ var firstTexts = ["Insurance For", "so yours is"]
 var secondTexts = ["PEACE OF MIND", "FREE TO DREAM."]
 
 // Div variables
+var imageContainer = document.querySelector('.imageContainer')
 var legalBox = document.querySelector('.legal')
 var legalText = document.querySelector('.legalText')
 var topText1 = document.querySelector('.topText1')
@@ -10,19 +11,16 @@ var bottomText1 = document.querySelector('.bottomText1')
 var topText2 = document.querySelector('.topText2')
 var bottomText2 = document.querySelector('.bottomText2')
 var learnMoreButton = document.querySelector('.learnMoreButton')
+var learnMoreButtonHover = document.querySelector('.learnMoreButtonHover')
 
-// mouseover event
-legalBox.addEventListener('mouseover', function(){
-  legalBox.style.opacity = "0"
-  legalText.style.top = "0%"
-})
 
-// mouseout event
-legalText.addEventListener('mouseout', function(){
-  console.log("legal out")
-  legalBox.style.opacity = ".5"
-  legalText.style.top = "-10%"
-})
+
+
+
+
+
+
+
 
 
 // setTimeout(function(){
@@ -71,11 +69,34 @@ setTimeout(function(){
 
 setTimeout(function(){
     legalBox.style.opacity = ".5"
+
+    // mouseover event
+    legalBox.addEventListener('mouseover', function(){
+      legalBox.style.opacity = "0"
+      legalText.style.top = "0%"
+    })
+
+    // mouseout event
+    legalText.addEventListener('mouseout', function(){
+      console.log("legal out")
+      legalBox.style.opacity = ".5"
+      legalText.style.top = "-10%"
+    })
 }, 8000)
 
 setTimeout(function(){
     learnMoreButton.style.opacity = "1"
     learnMoreButton.style.right = "5%"
+
+    imageContainer.addEventListener('mouseover', function(){
+      learnMoreButton.style.opacity = "0"
+      learnMoreButtonHover.style.opacity = "1"
+    })
+
+    imageContainer.addEventListener('mouseout', function(){
+      learnMoreButton.style.opacity = "1"
+      learnMoreButtonHover.style.opacity = "0"
+    })
 }, 8000)
 
 
