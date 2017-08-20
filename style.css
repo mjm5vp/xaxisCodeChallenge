@@ -49,9 +49,13 @@ body{
   color: white;
   background-color: black;
   padding: 1%;
-  transition: .5s;
+  font-family: "knockout", Arial, sans-serif;
 
-  font-family: "knockout";
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.legal.anim{
+  opacity: .5;
 }
 
 .legalText{
@@ -62,15 +66,23 @@ body{
   height: 10%;
   /*margin: 0 auto;*/
   position: absolute;
-  top: -10%;
+  /*top: -10%;*/
   /*right: 0%;*/
   opacity: .5;
   color: white;
   background-color: black;
   padding: 5%;
-  transition: .5s;
-  font-family: "knockout";
+  transition: 1s;
+  font-family: "knockout", Arial, sans-serif;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
 
+}
+.legalText.anim{
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*.legal:hover{
@@ -78,13 +90,14 @@ body{
   height: 10%;
 }*/
 
+
 .topText{
   color: white;
   position: absolute;
   font-size: 50px;
   top: 65%;
   transition: 1s;
-  font-family: "myriad";
+  font-family: "myriad", Arial, sans-serif;
   font-size: 30px;
   margin: 0 0 0 5%;
 }
@@ -97,7 +110,7 @@ body{
   opacity: 0;
   transition: 1s;
 
-  font-family: "helvetica";
+  font-family: "helvetica", Arial, sans-serif;
   font-size: 40px;
   font-weight: 800;
   margin: 0 0 0 5%;
@@ -108,17 +121,33 @@ body{
 .topText1{
   left: -100%;
 }
+.topText1.anim{
+  left: 0%;
+  opacity: 1;
+}
 
 .bottomText1{
   left: -100%;
+}
+.bottomText1.anim{
+  left: 0%;
+  opacity: 1;
 }
 
 .topText2{
   left: -100%;
 }
+.topText2.anim{
+  left: 0%;
+  opacity: 1;
+}
 
 .bottomText2{
   left: -100%;
+}
+.bottomText2.anim{
+  left: 0%;
+  opacity: 1;
 }
 
 .learnMoreButton{
@@ -130,6 +159,13 @@ body{
   opacity: 0;
   transition: 1s;
 }
+.learnMoreButton.anim{
+  opacity: 1;
+  right: 5%;
+}
+.learnMoreButton.switch{
+  opacity: 0;
+}
 
 .learnMoreButtonHover{
   position: absolute;
@@ -139,4 +175,7 @@ body{
   right: 5%;
   opacity: 0;
   transition: 1s;
+}
+.learnMoreButtonHover.switch{
+  opacity: 1
 }
