@@ -12,14 +12,14 @@ var secondTextDiv = document.querySelector('.secondText')
 legalBox.addEventListener('mouseover', function(){
   legalBox.innerHTML = legalText
   legalBox.style.padding = "5%"
-  legalBox.style.fontSize = "8px"
+  // legalBox.style.fontSize = "12px"
 })
 
 // mouseout event
 legalBox.addEventListener('mouseout', function(){
   legalBox.innerHTML = "Legal"
-  legalBox.style.padding = "2%"
-  legalBox.style.fontSize = "15px"
+  legalBox.style.padding = "1%"
+  // legalBox.style.fontSize = "10px"
 })
 
 
@@ -53,10 +53,16 @@ setTimeout(function(){
 }, 6500)
 
 
+
+
 setTimeout(function(){
   changeText('.firstText', firstTexts[1])
   changeText('.secondText', secondTexts[1])
 }, 6000)
+
+setTimeout(function(){
+    legalBox.style.display = "unset"
+}, 8000)
 
 
 
