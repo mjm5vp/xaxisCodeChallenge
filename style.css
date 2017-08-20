@@ -25,6 +25,14 @@ body{
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.imageContainer.anim{
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .fullImage{
@@ -46,6 +54,7 @@ body{
   top: 0%;
   right: 0%;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   color: white;
   background-color: black;
   padding: 1%;
@@ -56,6 +65,7 @@ body{
 }
 .legal.anim{
   opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
 .legalText{
@@ -69,15 +79,21 @@ body{
   /*top: -10%;*/
   /*right: 0%;*/
   opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   color: white;
   background-color: black;
   padding: 5%;
+  -webkit-transition: 1s;
   transition: 1s;
   font-family: "knockout", Arial, sans-serif;
+
   -webkit-transform: translate3d(0,-100%,0);
   transform: translate3d(0,-100%,0);
+
   -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 
 }
 .legalText.anim{
@@ -85,17 +101,12 @@ body{
   transform: translate3d(0,0,0);
 }
 
-/*.legal:hover{
-  width: 100%;
-  height: 10%;
-}*/
-
-
 .topText{
   color: white;
   position: absolute;
   font-size: 50px;
   top: 65%;
+  -webkit-transition: 1s;
   transition: 1s;
   font-family: "myriad", Arial, sans-serif;
   font-size: 30px;
@@ -108,6 +119,8 @@ body{
   font-size: 50px;
   top: 75%;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: 1s;
   transition: 1s;
 
   font-family: "helvetica", Arial, sans-serif;
@@ -124,6 +137,7 @@ body{
 .topText1.anim{
   left: 0%;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .bottomText1{
@@ -132,6 +146,7 @@ body{
 .bottomText1.anim{
   left: 0%;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .topText2{
@@ -140,6 +155,7 @@ body{
 .topText2.anim{
   left: 0%;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .bottomText2{
@@ -148,6 +164,7 @@ body{
 .bottomText2.anim{
   left: 0%;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .learnMoreButton{
@@ -157,14 +174,18 @@ body{
   bottom: 1%;
   right: 0%;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: 1s;
   transition: 1s;
 }
 .learnMoreButton.anim{
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   right: 5%;
 }
 .learnMoreButton.switch{
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 .learnMoreButtonHover{
@@ -174,8 +195,11 @@ body{
   bottom: 1%;
   right: 5%;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: 1s;
   transition: 1s;
 }
 .learnMoreButtonHover.switch{
-  opacity: 1
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
