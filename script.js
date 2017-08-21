@@ -31,11 +31,11 @@ setTimeout(function(){
 //Text 2
 setTimeout(function(){
     topText2.classList.add("anim")
-}, 4000)
+}, 3500)
 
 setTimeout(function(){
     bottomText2.classList.add("anim")
-}, 4500)
+}, 4000)
 
 //Legal and Learn More appear and event listeners
 setTimeout(function(){
