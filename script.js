@@ -21,21 +21,21 @@ setTimeout(function(){
 
 setTimeout(function(){
     bottomText1.classList.add("anim")
-}, 1500)
+}, 2000)
 
 setTimeout(function(){
     topText1.style.opacity = "0"
     bottomText1.style.opacity = "0"
-}, 3000)
+}, 5000)
 
 //Text 2
 setTimeout(function(){
     topText2.classList.add("anim")
-}, 3500)
+}, 6000)
 
 setTimeout(function(){
     bottomText2.classList.add("anim")
-}, 4000)
+}, 7000)
 
 //Legal and Learn More appear and event listeners
 setTimeout(function(){
@@ -64,4 +64,4 @@ setTimeout(function(){
       learnMoreButton.classList.remove("switch")
       learnMoreButtonHover.classList.remove("switch")
     })
-}, 6000)
+}, 10000)

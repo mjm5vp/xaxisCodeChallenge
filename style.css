@@ -1,6 +1,12 @@
 @font-face {
     font-family: "myriad";
-    src: url("AFI_fonts/MyriadPro-Semibold.ttf");
+
+    src: url('AFI_fonts/MyriadPro-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('AFI_fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('AFI_fonts/MyriadPro-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+     url('AFI_fonts/MyriadPro-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+     url('AFI_fonts/MyriadPro-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('AFI_fonts/MyriadPro-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -10,7 +16,13 @@
 
 @font-face {
     font-family: "knockout";
-    src: url("AFI_fonts/knockout48.ttf");
+    
+    src: url('AFI_fonts/knockout48.eot'); /* IE9 Compat Modes */
+    src: url('AFI_fonts/knockout48.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('AFI_fonts/knockout48.woff2') format('woff2'), /* Super Modern Browsers */
+     url('AFI_fonts/knockout48.woff') format('woff'), /* Pretty Modern Browsers */
+     url('AFI_fonts/knockout48.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('AFI_fonts/knockout48.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body{
@@ -42,6 +54,9 @@ body{
 }
 
 .fullImage{
+  /*Backgound image to use*/
+  background-image: url("images/threeHundredxSixHundred.png");
+
   width: 100%;
   height: 100%;
   position: absolute;
@@ -107,7 +122,7 @@ body{
   font-size: 30px;
   margin: 0 0 0 5%;
 
-  font-family: "myriad", Arial, sans-serif;
+  font-family: "myriad", cursive, sans-serif;
   color: white;
   position: absolute;
 
@@ -124,7 +139,7 @@ body{
 
   color: white;
   position: absolute;
-  font-family: "knockout", Arial, sans-serif;
+  font-family: "knockout", Impact, sans-serif;
   letter-spacing: .8px;
 
   zoom: 1;
