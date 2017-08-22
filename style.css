@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "knockout";
-    
+
     src: url('AFI_fonts/knockout48.eot'); /* IE9 Compat Modes */
     src: url('AFI_fonts/knockout48.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
      url('AFI_fonts/knockout48.woff2') format('woff2'), /* Super Modern Browsers */
@@ -150,40 +150,10 @@ body{
   transition: 1s;
 }
 
-.topText1{
-  left: -100%;
+.topText1, .bottomText1, .topText2, .bottomText2{
+  left: -50%;
 }
-.topText1.anim{
-  left: 0%;
-  zoom: 1;
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.bottomText1{
-  left: -100%;
-}
-.bottomText1.anim{
-  left: 0%;
-  zoom: 1;
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.topText2{
-  left: -100%;
-}
-.topText2.anim{
-  left: 0%;
-  zoom: 1;
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.bottomText2{
-  left: -100%;
-}
-.bottomText2.anim{
+.topText1.anim, .bottomText1.anim, .topText2.anim, .bottomText2.anim{
   left: 0%;
   zoom: 1;
   opacity: 1;
