@@ -152,6 +152,9 @@ body{
 
 .topText1, .bottomText1, .topText2, .bottomText2{
   left: -50%;
+  zoom: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .topText1.anim, .bottomText1.anim, .topText2.anim, .bottomText2.anim{
   left: 0%;
